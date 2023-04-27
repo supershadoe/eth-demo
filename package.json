@@ -8,9 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --plugin-search-dir . --check . && eslint .",
-    "format": "prettier --plugin-search-dir . --write ."
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "dependencies": {
     "ethers": "^6.1.0"
@@ -21,7 +19,6 @@
     "@sveltejs/kit": "^1.5.0",
     "autoprefixer": "^10.4.14",
     "daisyui": "^2.51.5",
-    "eth-rpc-errors": "^4.0.3",
     "postcss": "^8.4.21",
     "svelte": "^3.54.0",
     "svelte-check": "^3.0.1",

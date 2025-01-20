@@ -1,38 +1,14 @@
-# create-svelte
+## eth-demo
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+An DApp created using Svelte 3, Tailwind/DaisyUI and Metamask API to interact with a basic shopping cart service hosted using
+a smart contract written in [Solidity/Hardhat](https://github.com/chidam333/econEth/blob/542935b5e6fecc3645d43a1f499ed4b341506cef/contracts/shopping.sol)
 
-## Creating a project
+This was created for a workshop during E-summit '23 to teach participants how to create a smart contract and use it in a webapp.
 
-If you're seeing this, you've probably already done this step. Congrats!
+### How to run
+- Run `npm install`
+- Run `npm run dev`
+- To deploy, add an [adapter](https://kit.svelte.dev/docs/adapters) and build using `npm run build`
+- Deploy it by following your hosting platform's instructions
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> Note: Use `adapter-static` to build for GitHub pages
